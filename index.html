@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYSS Xalapa | Soluciones Empresariales</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">CYSS <span>Xalapa</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <!-- Botón que redirige al futuro sistema de gestión -->
+                <a href="#sistema-gestion" class="btn btn-outline" id="erp-link">
+                    <i class='bx bx-laptop'></i> Sistema de Gestión
+                </a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class='bx bx-menu' id="menu-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">Innovación para tu negocio</span>
+                <h1>Transformamos tu visión en <span>Realidad Digital</span></h1>
+                <p>En CYSS Xalapa brindamos soluciones integrales y sistemas a medida para optimizar el rendimiento y la gestión de tu empresa.</p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">Descubre Más</a>
+                    <a href="#contact" class="btn btn-secondary">Contáctanos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- A placeholder for an impressive 3D graphic or dashboard mockup -->
+                <div class="glass-card mockup-card">
+                    <div class="mockup-header">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="skeleton line-1"></div>
+                        <div class="skeleton line-2"></div>
+                        <div class="skeleton-chart">
+                            <div class="bar bar-1"></div>
+                            <div class="bar bar-2"></div>
+                            <div class="bar bar-3"></div>
+                            <div class="bar bar-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Impulsamos el crecimiento de tu empresa con tecnología de punta.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box"><i class='bx bx-code-alt'></i></div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web modernos, rápidos y optimizados para destacar en el mundo digital.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class='bx bx-server'></i></div>
+                    <h3>Sistemas de Gestión</h3>
+                    <p>Plataformas ERP y CRM a medida para automatizar y controlar tus operaciones.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class='bx bx-trending-up'></i></div>
+                    <h3>Consultoría IT</h3>
+                    <p>Asesoría experta para la transformación digital de tus procesos de negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container cta-container glass-panel">
+            <h2>¿Listo para llevar tu empresa al siguiente nivel?</h2>
+            <p>Únete a las empresas que ya confían en CYSS Xalapa.</p>
+            <a href="#contact" class="btn btn-primary">Inicia tu proyecto hoy</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2>CYSS <span>Xalapa</span></h2>
+                <p>Soluciones tecnológicas innovadoras para empresas visionarias.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#sistema-gestion">Sistema de Gestión</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CYSS Xalapa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para el sistema de gestión -->
+    <div id="erp-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <i class='bx bx-time-five modal-icon'></i>
+                <h2>Sistema en Desarrollo</h2>
+                <p>El sistema de gestión de CYSS Xalapa está actualmente en construcción. ¡Pronto estará disponible!</p>
+                <button class="btn btn-primary close-modal-btn">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
