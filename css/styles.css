@@ -34,12 +34,12 @@ html {
 
 body {
     font-family: var(--font-main);
-    background-color: var(--bg-color);
-    /* AURORA BACKGROUND - No dots, no grid. Just soft luminous gradients */
+    background-color: #cbd5e1; /* Slate 300 - Gris Acero más oscuro y profesional */
+    /* AURORA DEEP GRAY BACKGROUND */
     background-image: 
-        radial-gradient(at 0% 0%, rgba(0, 188, 212, 0.12) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(30, 58, 138, 0.1) 0px, transparent 50%),
-        radial-gradient(at 100% 0%, rgba(239, 68, 68, 0.03) 0px, transparent 30%);
+        radial-gradient(at 0% 0%, rgba(71, 85, 105, 0.2) 0px, transparent 50%), 
+        radial-gradient(at 100% 100%, rgba(30, 58, 138, 0.15) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(203, 213, 225, 0.8) 0px, transparent 100%);
     background-size: 100% 100%;
     background-attachment: fixed;
     color: var(--text-primary);
@@ -309,15 +309,19 @@ h1 span, h2 span {
 }
 
 /* Sections Base - Transparent to show Aurora */
+section {
+    padding: 3rem 0;
+    scroll-margin-top: 110px; /* Forzado a 110px para asegurar visibilidad */
+}
+
 .services, .hikstore, .about, .contact {
-    padding: 6rem 0;
-    background: transparent; /* No white background here anymore */
+    background: transparent; 
 }
 
 /* Section Headers */
 .section-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .section-header.left-align {
@@ -349,7 +353,7 @@ h1 span, h2 span {
     border-radius: 16px;
     overflow: hidden;
     transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03); /* Soft shadow */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06); /* Shadow slightly deeper for gray bg */
 }
 
 .service-card:hover {
